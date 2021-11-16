@@ -16,9 +16,14 @@
 import HomePromoNav from "./HomepromoNav.vue"
 import Image from "./Image.vue"
 export default {
+  data(){
+    return {
+      selectedTab: "Angele",
+    }
+  },
   components: { Image, HomePromoNav },
   name: "Carousel",
-  selectedTab: "Angele",
+  
   props: {
     artistList: Array,
   },

@@ -35,7 +35,7 @@ export default {
         {
           id: 2,
           tabId: "Damso",
-          lieu: "Lyon, Palais des sports",
+          lieu: "fqosidfhiqkdsruh",
           date: "15 décembre 2020",
           link: "/images/Ziak.jpg",
         },

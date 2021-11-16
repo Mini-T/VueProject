@@ -8,7 +8,7 @@
         <h2 class="descsubtitle">{{ artist.lieu }}</h2>
       </div>
       <div class="right">
-        <button id="reserver">{{ cta }}</button>
+        <button id="reserver">Réserver</button>
       </div>
     </div>
   </div>
