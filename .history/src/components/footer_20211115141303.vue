@@ -1,0 +1,18 @@
+<template>
+    <footer>
+        <h1 class="subtitle">buuk</h1>
+        <div>
+            <a href="#">Conditions de ventes</a>
+            <a href="#">Mentions légales</a>
+            <a href="#">Un problème ? +33 4 50 44</a>
+        </div>
+    </footer>
+</template>
+<script>
+
+</script>
+<style lang="scss">
+footer{
+    background: #FAFAFA;
+}
+</style>

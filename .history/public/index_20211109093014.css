@@ -1,0 +1,11 @@
+/* Add CSS styles here! */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'sora', sans-serif;
+  position: absolute;
+  width: 1920px;
+  height: 2459px;
+  
+  margin: 0px;
+}
