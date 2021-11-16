@@ -17,7 +17,7 @@
 
 
 export default {
-  
+
     name:"Image",
     props:{
         artistList:Array,

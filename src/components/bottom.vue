@@ -155,7 +155,7 @@ export default {
 #svgpropa {
   position: absolute;
   left: 20%;
-  bottom: 710px;
+  bottom: 27%;
 
 }
 </style>

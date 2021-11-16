@@ -13,17 +13,12 @@
 </template>
 <script>
 export default {
-    data(){
-        return{
-            selectedTab: "Angele",
-        }
-    },
   name: "HomePromoNav",
   props: {
     artistList: Array,
     selectedTab: String,
   },
-  
+
   methods: {
     updateSelectedTab(tabId) {
       this.$emit("updateSelectedTab", tabId);
@@ -32,9 +27,13 @@ export default {
 };
 </script>
 <style lang="scss">
+.butthr {
+  display: flex;
+}
 #artistes {
   width: 85vw;
   display: flex;
+  flex-direction: row;
 }
 .onglet {
   font-weight: 800;
