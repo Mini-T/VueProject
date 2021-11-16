@@ -6,9 +6,7 @@
       @update-selected-tab="this.updateSelectedTab"
     />
     <Image
-      :artistList="artistList"
-      v-model:artist="artistList.filter((obj) => obj.tabId === 'Angele')[0]"
-      cta ="Réserver"
+      v-model:artist="artistList.filter((obj) => obj.tabId === this.selectedTab)[0]"
     />
     
   </div>
