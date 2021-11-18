@@ -34,7 +34,7 @@ export default {
   flex-direction: row;
 }
 .onglet {
-  cursor: pointer ;
+  cursor:pointer ;
   transition: all ease-in 300ms;
   font-weight: 800;
   font-size: 25px;
