@@ -1,0 +1,82 @@
+.card {
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 37px;
+  width: 337px;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 237px;
+}
+.wrap {
+  position: relative;
+  bottom: 25%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom {
+  margin-top: 200px;
+  justify-content: center;
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr 1fr;
+  grid-template-areas: "propa propa propa" "card1 card2 card3";
+}
+.propa {
+  z-index: 1;
+  grid-area: propa;
+  font-size: 60px;
+  text-align: center;
+}
+.cardtitle {
+  background: -webkit-linear-gradient(left, #d99cf0 -2.19%, #927bf9 102.14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  order: 1;
+  align-self: flex-start;
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 800;
+  margin: 0px;
+  font-size: 30px;
+  line-height: 38px;
+}
+.cardcontent {
+  order: 2;
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+.cardindex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  background: linear-gradient(135deg, #d79cf1 0%, #967df9 100%);
+  border-radius: 14px;
+  order: 0;
+  align-self: flex-start;
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 38px;
+}
+#card1 {
+  grid-area: card1;
+}
+#card2 {
+  grid-area: card2;
+}
+#card3 {
+  grid-area: card3;
+}
+#svgpropa {
+  position: absolute;
+  left: 20%;
+  bottom: 24%;
+}

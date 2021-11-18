@@ -1,0 +1,10 @@
+// [snowpack] add styles to the page (skip if no document exists)
+if (typeof document !== 'undefined') {
+  const code = ".card {\n  margin: 10px;\n  background: rgba(0, 0, 0, 0.2);\n  border-radius: 37px;\n  width: 337px;\n  padding-left: 40px;\n  padding-right: 40px;\n  height: 237px;\n}\n.wrap {\n  position: relative;\n  bottom: 25%;\n  flex-direction: column;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.bottom {\n  margin-top: 200px;\n  justify-content: center;\n  display: grid;\n  grid-template: 1fr 1fr/1fr 1fr 1fr;\n  grid-template-areas: \"propa propa propa\" \"card1 card2 card3\";\n}\n.propa {\n  z-index: 1;\n  grid-area: propa;\n  font-size: 60px;\n  text-align: center;\n}\n.cardtitle {\n  background: -webkit-linear-gradient(left, #d99cf0 -2.19%, #927bf9 102.14%);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  order: 1;\n  align-self: flex-start;\n  font-family: Sora;\n  font-style: normal;\n  font-weight: 800;\n  margin: 0px;\n  font-size: 30px;\n  line-height: 38px;\n}\n.cardcontent {\n  order: 2;\n  font-family: Sora;\n  font-style: normal;\n  font-weight: 200;\n  font-size: 18px;\n  line-height: 23px;\n  color: #ffffff;\n}\n.cardindex {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 70px;\n  width: 70px;\n  background: linear-gradient(135deg, #d79cf1 0%, #967df9 100%);\n  border-radius: 14px;\n  order: 0;\n  align-self: flex-start;\n  font-family: Sora;\n  font-style: normal;\n  font-weight: 800;\n  font-size: 35px;\n  line-height: 38px;\n}\n#card1 {\n  grid-area: card1;\n}\n#card2 {\n  grid-area: card2;\n}\n#card3 {\n  grid-area: card3;\n}\n#svgpropa {\n  position: absolute;\n  left: 20%;\n  bottom: 24%;\n}";
+
+  const styleEl = document.createElement("style");
+  const codeEl = document.createTextNode(code);
+  styleEl.type = 'text/css';
+  styleEl.appendChild(codeEl);
+  document.head.appendChild(styleEl);
+}
