@@ -1,6 +1,6 @@
 <template>
   <div class="slider">
-    <concertsArtist />
+    
   </div>
   <div class="slider">
     <h1 class="styletitle">{{ musicstyle2 }}</h1>
@@ -12,7 +12,7 @@
 <script>
 import concertsArtist from "../components/concertsartist.vue"
 export default {
-  components:{concertsArtist},
+  components:{}
   name: "stylelist",
   props: {
     musicstyle1: String,

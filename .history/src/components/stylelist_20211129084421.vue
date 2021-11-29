@@ -1,6 +1,6 @@
 <template>
   <div class="slider">
-    <concertsArtist />
+    
   </div>
   <div class="slider">
     <h1 class="styletitle">{{ musicstyle2 }}</h1>
