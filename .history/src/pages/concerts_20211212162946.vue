@@ -14,6 +14,7 @@
     />
   </div>
   <Footer />
+  {{log}}
 </template>
 
 <script>
@@ -26,7 +27,7 @@ export default {
   data() {
     return {
       
-      
+      Musicstyle: {
         RapRnb: [
           {
             id: 1,
@@ -138,7 +139,7 @@ export default {
             img: "https://picsum.photos/200/300?random=1",
           },
         ],
-      
+      },
     };
   },
   name: "Concerts",

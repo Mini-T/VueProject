@@ -62,6 +62,7 @@ export default {
   background-position: center;
   height: 460px;
   margin: 10px;
+
   width: 338px;
   border-radius: 30px;
 }

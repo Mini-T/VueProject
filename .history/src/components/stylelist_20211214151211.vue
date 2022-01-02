@@ -194,11 +194,12 @@ export default {
 }
 .fleche::after {
   position: relative;
+
   left: 0;
   top: 0;
 }
 .mousedownbutton {
-
+  
   padding:15PX   !important;
   background: rgb(24, 24, 24) !important;
   color: white;

@@ -14,6 +14,7 @@
     />
   </div>
   <Footer />
+  {{log}}
 </template>
 
 <script>
@@ -25,8 +26,8 @@ import Footer from "../components/footer.vue";
 export default {
   data() {
     return {
-      
-      
+      log : console.log(${Musicstyle},
+      Musicstyle: {
         RapRnb: [
           {
             id: 1,
@@ -138,7 +139,7 @@ export default {
             img: "https://picsum.photos/200/300?random=1",
           },
         ],
-      
+      },
     };
   },
   name: "Concerts",

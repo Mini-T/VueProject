@@ -12,6 +12,7 @@ export default {
   name: "concertsArtist",
   props: {
     artiste: Object,
+    in
   },
   components: {},
 };
@@ -19,6 +20,7 @@ export default {
 <style lang="scss">
 .darklayer.pos {
   width: 100%;
+ 
   height: 100%;
   z-index: 5;
   display: grid;
@@ -62,6 +64,7 @@ export default {
   background-position: center;
   height: 460px;
   margin: 10px;
+
   width: 338px;
   border-radius: 30px;
 }

@@ -82,7 +82,7 @@ export default {
   let datasloaded = false
 		const bearerToken = 'fbd3ef359a52c5a6f201bcc9e1749ec1872ea32ff40c6a542fa6e5a04ea7c317f15c42f3ee0ace1423862c1e7f000ef6298658e21dac7bf82039cdd70cf3ba7d8a1c385926922b490da7b248a17ebea2c2879950597c2e1afe3f054a396585ab41164fb4b70846e04ac8310b024bb72f3a0cc8f393e999c9adef6c721cd23aa0'
     axios
-      .get('https://buuk-api.herokuapp.com/', { headers: {"Authorization" : `Bearer ${bearerToken}`} })
+      .get('https://buuk-api.herokuapp.com/concerts', { headers: {"Authorization" : `Bearer ${bearerToken}`} })
       
       .then(response => {
         this.concertsApi = response.data.slice(0, 5)

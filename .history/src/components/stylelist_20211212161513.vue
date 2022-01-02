@@ -19,7 +19,6 @@
           :artiste="artiste"
           v-for="artiste in RapRnb"
           :key="artiste.id"
-          :class="{bigone}"
         />
         <div class="cardconcerts longer">
           <span class="trolled">Rien de plus ici ... Gros con</span>
@@ -123,50 +122,50 @@ export default {
   methods: {
     next1() {
       console.log(this.slideIndex1);
-      if (this.slideIndex1 === -1790) {
+      if (this.slideIndex1 === -1940) {
         this.slideIndex1 = 0;
       } else {
-        this.slideIndex1 -= 358;
+        this.slideIndex1 -= 388;
       }
     },
     prev1() {
       console.log(this.slideIndex1);
       if (this.slideIndex1 === 0) {
-        this.slideIndex1 = -1790;
+        this.slideIndex1 = -1940;
       } else {
-        this.slideIndex1 += 358;
+        this.slideIndex1 += 388;
       }
     },
     next2() {
       console.log(this.slideIndex2);
-      if (this.slideIndex2 === -1790) {
+      if (this.slideIndex2 === -1940) {
         this.slideIndex2 = 0;
       } else {
-        this.slideIndex2 -= 358;
+        this.slideIndex2 -= 388;
       }
     },
     prev2() {
       console.log(this.slideIndex2);
       if (this.slideIndex2 === 0) {
-        this.slideIndex2 = -1790;
+        this.slideIndex2 = -1940;
       } else {
-        this.slideIndex2 += 358;
+        this.slideIndex2 += 388;
       }
     },
     next3() {
       console.log(this.slideIndex3);
-      if (this.slideIndex3 === -1790) {
+      if (this.slideIndex3 === -1940) {
         this.slideIndex3 = 0;
       } else {
-        this.slideIndex3 -= 358;
+        this.slideIndex3 -= 388;
       }
     },
     prev3() {
       console.log(this.slideIndex3);
       if (this.slideIndex3 === 0) {
-        this.slideIndex3 = -1790;
+        this.slideIndex3 = -1940;
       } else {
-        this.slideIndex3 += 358;
+        this.slideIndex3 += 388;
       }
     },
   },
@@ -194,12 +193,13 @@ export default {
 }
 .fleche::after {
   position: relative;
+
   left: 0;
   top: 0;
 }
 .mousedownbutton {
 
-  padding:15PX   !important;
+ 
   background: rgb(24, 24, 24) !important;
   color: white;
 }
@@ -219,8 +219,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  overflow: hidden;
-  width: 100.7%;
+  width: 100%;
 }
 .slidebtn {
   transition: all cubic-bezier(0.53, 0.02, 0.01, 1.01) 300ms;
@@ -233,8 +232,8 @@ export default {
   align-items: center;
   background-color: white;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   &.next {
     right: 26%;
   }

@@ -19,7 +19,6 @@
           :artiste="artiste"
           v-for="artiste in RapRnb"
           :key="artiste.id"
-          :class="{bigone}"
         />
         <div class="cardconcerts longer">
           <span class="trolled">Rien de plus ici ... Gros con</span>
@@ -194,12 +193,13 @@ export default {
 }
 .fleche::after {
   position: relative;
+
   left: 0;
   top: 0;
 }
 .mousedownbutton {
 
-  padding:15PX   !important;
+ 
   background: rgb(24, 24, 24) !important;
   color: white;
 }
